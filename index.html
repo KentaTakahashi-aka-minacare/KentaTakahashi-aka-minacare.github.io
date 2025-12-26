@@ -1,11 +1,518 @@
-<!-- index.html -->
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>GitHub Pages Test</title>
-  </head>
-  <body>
-    <h1>Hello GitHub Pages!</h1>
-  </body>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JAL Wellness 2030</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="preload" href="./assets/css/common.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="stylesheet" href="https://use.typekit.net/gsy1ioe.css">
+  <noscript>
+    <link rel="stylesheet" href="assets/css/common.css">
+  </noscript>
+</head>
+<body>
+  <header>
+    <div class="logo-area">
+      <img 
+        src="assets/img/common/logo.svg"
+        alt="JAL JAPAN AIRLINES"
+        loading="eager"
+        decoding="async"
+        fetchpriority="high" width="33" height="36"
+      >
+      <h1>JAL Wellness 2030</h1>
+    </div>
+    <ul>
+      <li class="circle">Wellbodyをつくる</li>
+      <li class="circle">JAL Wellness活動</li>
+    </ul>
+    <div class="hbtn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="fix-menu">
+      <ul>
+        <li class="circle bg_green"><a href="./">トップページ</a></li>
+        <li class="circle bg_green"><a href="./">Wellbodyをつくる</a></li>
+        <li class="circle bg_green"><a href="./">JAL Wellness活動</a></li>
+        <li class="circle bg_green"><a href="./">Wellness宣言</a></li>
+        <li class="circle bg_green two">
+          <a href="./">
+            Wellnessとは<br>
+            <small>4本柱の説明など</small>
+          </a>
+        </li>
+        <li class="circle bg_green"><a href="./">Wellnessスコア確認</a></li>
+      </ul>
+      <ul>
+        <li class="circle bg_green two">
+          <a href="./">Wellnessライフ実践例</a>
+          <ul class="small">
+            <li>- 食生活</li>
+            <li>- 運動</li>
+            <li>- こころ</li>
+          </ul>
+        </li>
+        <li class="circle bg_green"><a href="./goal/">Wellness2030目標・実績</a></li>
+        <li class="circle bg_green"><a href="./">Wellness活動検索（一覧）</a></li>
+        <li class="circle bg_green"><a href="./">事務局提供コンテンツ一覧</a></li>
+      </ul>
+      <div>
+        <img 
+          data-src="./assets/img/common/header_wellness@1x.webp"
+          data-srcset="./assets/img/common/header_wellness@1x.webp 1x, ./assets/img/common/header_wellness@2x.webp 2x"
+          alt="WELLNESS |JAL Wellness 2030"
+          loading="lazy"
+          decoding="async"
+          fetchpriority="low" width="371" height="165"
+        >
+        <p>JAL Wellness 2030</p>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="fv">
+      <h2>
+        <picture>
+          <source
+            media="(min-width: 744px)"
+            srcset="./assets/img/top/main_image_pc@1x.webp 1x, ./assets/img/top/main_image_pc@2x.webp 2x"
+            type="image/webp"
+            width="1440" height="1560"
+          >
+          <img 
+            data-src="./assets/img/top/main_image@2x.webp"
+            alt="Empower Wellness, Embrace Life | JAL Wellness 2030"
+            loading="eager"
+            decoding="async"
+            fetchpriority="high" width="375" height="596"
+          >
+        </picture>
+      </h2>
+    </div>
+    <div class="sec1">
+      <div class="container">
+        <p>
+          JAL Wellness 2030 ウェルネス 始まります。<br>
+          明日の空は、今日のWellnessから。わたし発、みんなのハッピー！
+        </p>
+        <div class="sec1-banner">
+          <a href="">
+            <picture>
+              <source
+                media="(min-width: 744px)"
+                data-srcset="./assets/img/top/sec1_2_pc@1x.webp 1x, ./assets/img/top/sec1_1_pc@2x.webp 2x"
+                type="image/webp"
+                width="92" height="89"
+              >
+              <img 
+                data-src="./assets/img/top/sec1_1.webp"
+                alt="鳥のイラスト | JAL Wellness 2030"
+                loading="lazy"
+                decoding="async"
+                fetchpriority="low" width="60" height="58"
+              >
+            </picture>
+            <div>
+              <h3 class="ttl">Wellness宣言</h3>
+              <p>社員・会社・健保が一体となって健康づくりに取り組みます</p>
+            </div>
+          </a>
+          <a href="">
+            <picture>
+              <source
+                media="(min-width: 744px)"
+                data-srcset="./assets/img/top/sec1_2_pc@1x.webp 1x, ./assets/img/top/sec1_2_pc@2x.webp 2x"
+                type="image/webp"
+                width="105" height="77"
+              >
+              <img 
+                src="./assets/img/top/sec1_2.webp"
+                alt="花のイラスト | JAL Wellness 2030"
+                loading="lazy"
+                decoding="async"
+                fetchpriority="low" width="48" height="63"
+              >
+            </picture>
+            <div>
+              <h3 class="ttl">Wellness推進体制</h3>
+              <p>組織全体でウェルネス活動を推進する体制を構築しています</p>
+            </div>
+          </a>
+          <a href="">
+            <picture>
+              <source
+                media="(min-width: 744px)"
+                data-srcset="./assets/img/top/sec1_3_pc@1x.webp 1x, ./assets/img/top/sec1_3_pc@2x.webp 2x"
+                type="image/webp"
+                width="105" height="77"
+              >
+              <img 
+                src="./assets/img/top/sec1_3.webp"
+                alt="花のイラスト | JAL Wellness 2030"
+                loading="lazy"
+                decoding="async"
+                fetchpriority="low" width="55" height="40"
+              >
+            </picture>
+            <div>
+              <h3 class="ttl">Wellnessとは</h3>
+              <p>健康を土台に、豊かで輝く人生を実現しようとする生き方</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="sec2">
+      <div class="container">
+        <h2 class="ttl">ウェルボディをつくる</h2>
+        <p>
+          4つの柱で健康な体と心を育てます。<br>
+          幸せで輝くようにイキイキしている状態。その土台となるのがウェルボディです。<br>
+          JALグループは、社員、会社、健保が一体となってJAL Wellnessに取り組みます。
+        </p>
+        <a href="" class="btn">詳しく見る</a>
+        <picture>
+          <source
+            media="(min-width: 744px)"
+            data-srcset="./assets/img/common/pillar_pc@1x.webp 1x, ./assets/img/common/pillar_pc@2x.webp 2x"
+            type="image/webp"
+            width="988" height="988"
+          >
+          <img 
+            src="./assets/img/top/pillar.webp"
+            alt="ウェルボディー 4本の柱 | JAL Wellness 2030"
+            loading="lazy"
+            decoding="async"
+            fetchpriority="low"
+            width="335" height="335"
+          >
+        </picture>
+        <h2 class="ttl">Wellnessスコア</h2>
+        <p>
+          あなたの健康状態を「食生活」「運動」「睡眠」<br class="sp">「こころ」の4つの柱で数値化し、<br>
+          総合的なウェルネススコアとして表示します。
+        </p>
+        <a href="" class="btn">スコアを測る</a>
+      </div>
+    </div>
+    <div class="news">
+      <div class="container">
+        <h2 class="ttl">News・更新情報</h2>
+        <div class="news-flex">
+          <a href="">
+            <time datetime="2024-03-15">2024.03.15</time>
+            <p>春の健康キャンペーン開始のお知らせ</p>
+          </a>
+          <a href="">
+            <time datetime="2024-03-15">2024.03.15</time>
+            <p>新しいウェルネスプログラムの導入について</p>
+          </a>
+          <a href="">
+            <time datetime="2024-03-15">2024.03.15</time>
+            <p>健康診断結果の活用方法セミナー開催</p>
+          </a>
+        </div>
+        <a href="" class="btn">一覧を見る</a>
+      </div>
+    </div>
+    <div class="sec3">
+      <div class="container">
+        <h2 class="ttl">JAL Wellnessコンテンツ</h2>
+        <div class="sec3-flex">
+          <div>
+            <picture>
+              <source
+                media="(min-width: 744px)"
+                data-srcset="./assets/img/top/content1_pc@1x.webp 1x, ./assets/img/top/content1_pc@2x.webp 2x"
+                type="image/webp"
+                width="203" height="194"
+              >
+              <img 
+                data-src="./assets/img/top/content1.webp"
+                alt="鳥のイラスト | JAL Wellness 2030"
+                loading="lazy"
+                decoding="async"
+                fetchpriority="low"
+                width="203" height="194"
+              >
+            </picture>
+            <small class="en">Declaration</small>
+            <h3><span>Wellness宣言</span></h3>
+            <p>
+              JALグループの<br>
+              ウェルネス宣言について
+            </p>
+          </div>
+          <div>
+            <picture>
+              <source
+                media="(min-width: 744px)"
+                data-srcset="./assets/img/top/content2_pc@1x.webp 1x, ./assets/img/top/content2_pc@2x.webp 2x"
+                type="image/webp"
+                width="197" height="201"
+              >
+              <img 
+                data-src="./assets/img/top/content2.webp"
+                alt="ビルのイラスト | JAL Wellness 2030"
+                loading="lazy"
+                decoding="async"
+                fetchpriority="low"
+                width="198" height="101"
+              >
+            </picture>
+            <small class="en">Structure</small>
+            <h3><span>推進体制</span></h3>
+            <p>
+              ウェルネス推進の<br>
+              組織体制
+            </p>
+          </div>
+          <div>
+            <picture>
+              <source
+                media="(min-width: 744px)"
+                data-srcset="./assets/img/top/content3_pc@1x.webp 1x, ./assets/img/top/content3_pc@2x.webp 2x"
+                type="image/webp"
+                width="238" height="154"
+              >
+              <img 
+                data-src="./assets/img/top/content3.webp"
+                alt="WELLNESS | JAL Wellness 2030"
+                loading="lazy"
+                decoding="async"
+                fetchpriority="low"
+                width="238" height="158"
+              >
+            </picture>
+            <small class="en">Definition</small>
+            <h3><span>Wellnessとは</span></h3>
+            <p>
+              ウェルネスの<br>
+              定義と考え方
+            </p>
+          </div>
+          <div>
+            <picture>
+              <source
+                media="(min-width: 744px)"
+                data-srcset="./assets/img/top/content4_pc@1x.webp 1x, ./assets/img/top/content4_pc@2x.webp 2x"
+                type="image/webp"
+                width="202" height="202"
+              >
+              <img 
+                data-src="./assets/img/top/content4.webp"
+                alt="四つの柱 | JAL Wellness 2030"
+                loading="lazy"
+                decoding="async"
+                fetchpriority="low"
+                width="202" height="202"
+              >
+            </picture>
+            <small class="en">Health</small>
+            <h3><span>ウェルボディをつくる</span></h3>
+            <p>
+              4つの柱で<br>
+              健康な体づくり
+            </p>
+          </div>
+          <div>
+            <picture>
+              <source
+                media="(min-width: 744px)"
+                data-srcset="./assets/img/top/content5_pc@1x.webp 1x, ./assets/img/top/content5_pc@2x.webp 2x"
+                type="image/webp"
+                width="202" height="221"
+              >
+              <img 
+                data-src="./assets/img/top/content5.webp"
+                alt="運動しているイラスト | JAL Wellness 2030"
+                loading="lazy"
+                decoding="async"
+                fetchpriority="low"
+                width="202" height="221"
+              >
+            </picture>
+            <small class="en">Activities</small>
+            <h3><span>Wellness活動を進める</span></h3>
+            <p>
+              具体的な活動方法と<br>
+              プログラム
+            </p>
+          </div>
+          <div>
+            <picture>
+              <source
+                media="(min-width: 744px)"
+                data-srcset="./assets/img/top/content6_pc@1x.webp 1x, ./assets/img/top/content6_pc@2x.webp 2x"
+                type="image/webp"
+                width="231" height="193"
+              >
+              <img 
+                data-src="./assets/img/top/content6.webp"
+                alt="運動しているイラスト | JAL Wellness 2030"
+                loading="lazy"
+                decoding="async"
+                fetchpriority="low"
+                width="231" height="193"
+              >
+            </picture>
+            <small class="en">Leaders</small>
+            <h3><span>Wellnessリーダーとは</span></h3>
+            <p>
+              リーダーの役割と<br>
+              活動内容
+            </p>
+          </div>
+          <div>
+            <picture>
+              <source
+                media="(min-width: 744px)"
+                data-srcset="./assets/img/top/content7_pc@1x.webp 1x, ./assets/img/top/content7_pc@2x.webp 2x"
+                type="image/webp"
+                width="208" height="213"
+              >
+              <img 
+                data-src="./assets/img/top/content7.webp"
+                alt="花のイラスト | JAL Wellness 2030"
+                loading="lazy"
+                decoding="async"
+                fetchpriority="low"
+                width="208" height="213"
+              >
+            </picture>
+            <small class="en">FAQ</small>
+            <h3><span>よくある質問</span></h3>
+            <p>
+              ウェルネス活動に<br>
+              関するQ&A
+            </p>
+          </div>
+          <div>
+            <picture>
+              <source
+                media="(min-width: 744px)"
+                data-srcset="./assets/img/top/content8_pc@1x.webp 1x, ./assets/img/top/content8_pc@2x.webp 2x"
+                type="image/webp"
+                width="230" height="217"
+              >
+              <img 
+                data-src="./assets/img/top/content8.webp"
+                alt="花のイラスト | JAL Wellness 2030"
+                loading="lazy"
+                decoding="async"
+                fetchpriority="low"
+                width="230" height="217"
+              >
+            </picture>
+            <small class="en">Search</small>
+            <h3><span>活動検索</span></h3>
+            <p>
+              あなたに合った活動を<br>
+              見つけよう
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sec4">
+      <picture class="plane">
+        <source
+          media="(min-width: 744px)"
+          data-srcset="./assets/img/top/plane_pc@1x.webp 1x, ./assets/img/top/plane_pc@2x.webp 2x"
+          type="image/webp"
+          width="280" height="90"
+        >
+        <img 
+          data-src="./assets/img/top/plane.webp"
+          alt="JAL飛行機のイラスト | JAL Wellness 2030"
+          loading="lazy"
+          decoding="async"
+          fetchpriority="low"
+          width="171" height="59"
+        >
+      </picture>
+      <picture class="bird">
+        <source
+          media="(min-width: 744px)"
+          data-srcset="./assets/img/top/bird@1x.webp 1x, ./assets/img/top/bird@2x.webp 2x"
+          type="image/webp"
+          width="141" height="128"
+        >
+        <img 
+          data-src="./assets/img/top/bird.webp"
+          alt="鳥のイラスト | JAL Wellness 2030"
+          loading="lazy"
+          decoding="async"
+          fetchpriority="low"
+          width="85" height="77"
+        >
+      </picture>
+      <div class="container">
+        <h2>
+          <img 
+            data-src="./assets/img/top/wellness_ttl.svg"
+            alt="WELLNESS | JAL Wellness 2030"
+            loading="lazy"
+            decoding="async"
+            fetchpriority="low" width="270" height="52"
+          >
+        </h2>
+        <h3>JAL Wellness 2030</h3>
+        <p>健康を土台に、豊かで輝く人生を実現する</p>
+        <div class="sec4-flex">
+          <a href="">
+            <small class="en">Wellness Score</small>
+            <p>ウェルネススコアを確認</p>
+          </a>
+          <a href="">
+            <small class="en">Wellness Activities</small>
+            <p>ウェルネス活動を検索</p>
+          </a>
+        </div>
+      </div>
+      <picture class="illust">
+        <source
+          media="(min-width: 744px)"
+          data-srcset="./assets/img/top/iilust_pc@1x.webp 1x, ./assets/img/top/iilust_pc@2x.webp 2x"
+          type="image/webp"
+          width="1352" height="384"
+        >
+        <img 
+          data-src="./assets/img/top/iilust.webp"
+          alt="イラスト | JAL Wellness 2030"
+          loading="lazy"
+          decoding="async"
+          fetchpriority="low"
+          width="322" height="333"
+        >
+      </picture>
+    </div>
+    <footer class="top">
+      <div class="container">
+        <div>
+          <strong>JAL Wellness 2030</strong>
+          <p>健康を土台に、豊かで輝く人生を実現する</p>
+          <small>© 日本航空健康保険組合 2025 All rights reserved.</small>
+        </div>
+        <nav>
+          <ul>
+            <li class="circle"><a href="">お問い合わせ</a></li>
+            <li class="circle"><a href="">サイトマップ</a></li>
+            <li class="circle"><a href="https://www.jal.co.jp/jp/ja/">JAL公式サイト</a></li>
+          </ul>
+          <ul>
+            <li class="circle"><a href="">プライバシーポリシー</a></li>
+            <li class="circle"><a href="">健康保険組合サイト</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </main>
+  <script src="./assets/js/script.js"></script>
+</body>
 </html>

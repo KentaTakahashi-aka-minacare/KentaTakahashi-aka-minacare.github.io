@@ -1,0 +1,77 @@
+@use "sass:map";
+// メディアクエリー
+$breakpoints: (
+  'sp': 'screen and (max-width: 375px)',
+  'tab': 'screen and (min-width: 744px)',
+  'pc': 'screen and (min-width: 1280px)',
+) !default;
+@mixin media($breakpoint) {
+  @media #{map.get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+@mixin center($dir) {
+  position: absolute;
+  @if $dir == xy {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  @else if $dir == x{
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  @else if $dir == y{
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+@mixin flex($dir){
+  display: flex;
+  @if $dir == xy {
+    align-items: center;
+    justify-content: center;
+  }
+  @else if $dir == x{
+    justify-content: center;
+  }
+  @else if $dir == y{
+    align-items: center;
+  }
+}
+
+// 背景画像
+@mixin bgimg($url: "", $bgSize){
+  background-size: $bgSize;
+  background-image: url(#{$url}.webp);
+  background-image: image-set(
+    url(#{$url}@1x.webp) 1x,
+    url(#{$url}@2x.webp) 2x
+  );
+  background-image: -webkit-image-set(
+    url(#{$url}.webp) 1x,
+    url(#{$url}@2x.webp) 2x
+  );
+
+}
+
+@mixin rightRedArrow($width: 1rem, $heihgt: 1rem, $top: 50%, $right: 1.4rem) {
+  &::after {
+    content: '';
+    position: absolute;
+    top: $top;
+    right: $right;
+    transform: translateY(-50%);
+    filter: brightness(0) saturate(100%) invert(30%) sepia(22%) saturate(6032%) hue-rotate(335deg) brightness(95%) contrast(76%);
+    width: $width;
+    height: $heihgt;
+    background-size: 100% 100%;
+    background-image: url(../img/common/right_arrow.svg);
+    transition: .5s;
+  }
+  &:hover::after {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(274deg) brightness(101%) contrast(103%);
+  }
+}
