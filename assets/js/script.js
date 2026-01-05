@@ -1,3 +1,48 @@
+// fadein
+function fadeIn(element, display, duration = 500) {
+  if (element.dataset.fading === 'true') return; //フェード中なら実行しない
+  element.dataset.fadeing = 'true';
+  element.style.opacity = 0;
+  element.style.display = display;
+  
+  let opacity = 0;
+  const interval = 10;
+  const increment = interval / duration;
+
+  const fade = setInterval(() => {
+    opacity += increment;
+    element.style.opacity = opacity;
+
+    if (opacity >= 1) {
+      clearInterval(fade);
+      element.style.opacity = 1;
+      element.dataset.fading = 'false'; //フェード完了
+    }
+  }, interval);
+}
+
+// fadeout
+function fadeOut(element, duration = 500) {
+  if (element.dataset.fading === 'true') return; // フェード中なら実行しない
+  element.dataset.fading = 'true'; // フェード中を記録
+
+  let opacity = 1;
+  const interval = 10;
+  const decrement = interval / duration;
+
+  const fade = setInterval(() => {
+    opacity -= decrement;
+    element.style.opacity = opacity;
+
+    if (opacity <= 0) {
+      clearInterval(fade);
+      element.style.display = 'none';
+      element.style.opacity = 0;
+      element.dataset.fading = 'false'; // フェード完了
+    }
+  }, interval);
+}
+
 //画像lazy
 if ("loading" in HTMLImageElement.prototype) {
   var images = document.querySelectorAll('img[loading="lazy"]');
@@ -112,4 +157,19 @@ const hBtn = document.querySelector('.hbtn');
 hBtn.addEventListener('click', () => {
   hBtn.classList.toggle('active');
   fixMenu.classList.toggle('active');
+});
+
+// faq
+document.querySelectorAll('.faq-sec .q').forEach(element => {
+  element.addEventListener('click', function() {
+    const answer = this.nextElementSibling;  // '.a' が '.q' の次の要素と仮定
+
+    if (answer.style.display !== 'flex') {
+      fadeIn(answer, 'flex');
+      element.classList.add('show');
+    } else {
+      fadeOut(answer);
+      element.classList.remove('show');
+    }
+  });
 });

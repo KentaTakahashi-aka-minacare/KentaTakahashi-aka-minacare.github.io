@@ -57,12 +57,14 @@ $breakpoints: (
 
 }
 
-@mixin rightRedArrow($width: 1rem, $heihgt: 1rem, $top: 50%, $right: 1.4rem) {
+@mixin rightRedArrow($width: 1rem, $heihgt: 1rem, $top: 50%, $right: 1.4rem, $left: auto) {
+  position: relative;
   &::after {
     content: '';
     position: absolute;
     top: $top;
     right: $right;
+    left: $left;
     transform: translateY(-50%);
     filter: brightness(0) saturate(100%) invert(30%) sepia(22%) saturate(6032%) hue-rotate(335deg) brightness(95%) contrast(76%);
     width: $width;
@@ -73,5 +75,23 @@ $breakpoints: (
   }
   &:hover::after {
     filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(274deg) brightness(101%) contrast(103%);
+  }
+}
+
+@mixin footerIllust {
+  position: relative;
+  .illust {
+    @include center(x);
+    top: -7rem;
+    z-index: 10;
+    text-align: center;
+    width: 100%;
+    @include media('tab') {
+      width: 83%;
+      top: -15rem;
+    }
+    @include media('pc') {
+      top: -17vw;
+    }
   }
 }
