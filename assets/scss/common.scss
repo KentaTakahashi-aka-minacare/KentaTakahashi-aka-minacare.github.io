@@ -115,7 +115,6 @@ header {
   padding: 0 2.3rem 0 1.2rem;
   position: fixed;
   z-index: 10000;
-  background-color: #fff;
   top: 0;
   left: 0;
   .logo-area {
@@ -1305,7 +1304,7 @@ footer {
 }
 .goal {
   .sec3 {
-    padding: 6.5rem 0 9.5rem;
+    padding: 6.5rem 0 4.5rem;
     background-color: $bgOrange;
     position: relative;
     &::before {
@@ -1332,6 +1331,13 @@ footer {
     }
     &-flex {
       >div {
+        width: 31rem;
+        text-align: center;
+        picture {
+          display: block;
+          width: 100%;
+          height: 24.6rem;
+        }
         p {
           margin: 2.5rem 0;
         }
@@ -1341,9 +1347,9 @@ footer {
       }
     }
     @include media('tab') {
-      padding: 12rem 0 21.1rem;
+      padding: 12rem 0 12.1rem;
       &::before {
-        height: 13.5rem;
+        height: 6rem;
         bottom: 0;
         background-size: cover;
         width: 100%;
@@ -1354,9 +1360,15 @@ footer {
 }
 .goal {
   footer {
-    padding-top: 0;
+    margin-top: -2rem;
+    padding-top: 2rem;
     &::before {
-      content: none;
+      top: -3rem;
+      background-image: url(../img/common/footer_orange_bg.svg);
+    }
+    @include media('tab') {
+      padding-top: 22rem;
+      margin-top: -4rem;
     }
   }
 }
@@ -2062,6 +2074,8 @@ body:has(.links) {
 // news
 .news {
   background-color: $bgGreen;
+  margin-top: 0;
+  padding-top: 8.9rem;
   .under-fv {
     p {
       margin-bottom: 7rem;
