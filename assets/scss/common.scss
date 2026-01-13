@@ -1160,6 +1160,10 @@ footer {
     .btn {
       width: 22rem;
     }
+    .annotation {
+      margin: 4rem 0 2rem;
+      display: block;
+    }
     >div {
       width: 100%;
       overflow-x: scroll;
@@ -1167,7 +1171,6 @@ footer {
         width: 91rem;
         background-color: #fff;
         border-collapse: collapse;
-        margin-top: 4rem;
         th, td {
           font-size: 1.4rem;
           padding: 1.5rem 1.2rem;
@@ -1214,6 +1217,9 @@ footer {
     .container {
       .btn {
         margin-bottom: 5.6rem;
+      }
+      .annotation {
+        display: none;
       }
       >div {
         table {
@@ -1304,19 +1310,8 @@ footer {
 }
 .goal {
   .sec3 {
-    padding: 6.5rem 0 4.5rem;
+    padding: 6.5rem 0 10.5rem;
     background-color: $bgOrange;
-    position: relative;
-    &::before {
-      content: '';
-      position: absolute;
-      width: 144rem;
-      height: 40vw;
-      background-image: url(../img/goals/goal4_bg.svg);
-      background-position: -544px bottom;
-      bottom: 0;
-      background-repeat: no-repeat;
-    }
     .container {
       .ttl {
         margin-bottom: 3rem;
@@ -1361,7 +1356,6 @@ footer {
 .goal {
   footer {
     margin-top: -2rem;
-    padding-top: 2rem;
     &::before {
       top: -3rem;
       background-image: url(../img/common/footer_orange_bg.svg);
