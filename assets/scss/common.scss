@@ -154,7 +154,7 @@ header {
         transform: translate(-50%, -50%);
       }
       &:last-of-type {
-        top: calc(100% - 17.6px);
+        top: calc(100% - 1.8rem);
       }
     }
     &.active {
@@ -492,7 +492,7 @@ main {
     width: 100%;
     height: 41.6vw;
     background-image: url(../img/top/sec1_bg.svg);
-    background-size: 100% 100%;
+    background-size: cover;
     background-position: bottom;
     left: 0;
     bottom: -17vw;
@@ -565,8 +565,8 @@ main {
     padding: 7rem 0 10rem;
     &::after {
       background-image: url(../img/top/sec1_bg_pc.svg);
-      height: 8.6vw;
-      bottom: -8vw;
+      height: 4.6vw;
+      bottom: -4vw;
     }
     .container {
       >p {
@@ -1233,6 +1233,7 @@ footer {
 .goal3 {
   padding: 7rem 0 10rem;
   position: relative;
+  overflow-x: hidden;
   &::after {
     content: '';
     position: absolute;
@@ -1355,14 +1356,11 @@ footer {
 }
 .goal {
   footer {
-    margin-top: -2rem;
     &::before {
-      top: -3rem;
       background-image: url(../img/common/footer_orange_bg.svg);
     }
     @include media('tab') {
-      padding-top: 22rem;
-      margin-top: -4rem;
+      padding-top: 16vw;
     }
   }
 }
@@ -1574,7 +1572,16 @@ footer {
           margin-top: 6rem;
         }
       }
-      
+      ul, ol {
+        li {
+          line-height: calc(32 / 15);
+          text-indent: -1.5rem;
+          padding-left: 1.5rem;
+          & + li {
+            margin-top: 1rem;
+          }
+        }
+      }
     }
   }
   .contact {

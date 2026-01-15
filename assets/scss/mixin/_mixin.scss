@@ -46,15 +46,14 @@ $breakpoints: (
 @mixin bgimg($url: "", $bgSize){
   background-size: $bgSize;
   background-image: url(#{$url}.webp);
-  background-image: image-set(
-    url(#{$url}@1x.webp) 1x,
-    url(#{$url}@2x.webp) 2x
-  );
   background-image: -webkit-image-set(
     url(#{$url}.webp) 1x,
     url(#{$url}@2x.webp) 2x
   );
-
+  background-image: image-set(
+    url(#{$url}@1x.webp) 1x,
+    url(#{$url}@2x.webp) 2x
+  );
 }
 
 @mixin rightRedArrow($width: 1rem, $heihgt: 1rem, $top: 50%, $right: 1.4rem, $left: auto) {
